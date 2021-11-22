@@ -8,14 +8,14 @@ then
   return -1
 fi
 
-if [ -z $INPUT_PR_TITLE ]
+if [ -z "$INPUT_PR_TITLE" ]
 then
     echo "pr_title must be defined"
     return -1
 fi
 
 
-if [ -z $INPUT_COMMIT_MSG ]
+if [ -z "$INPUT_COMMIT_MSG" ]
 then
     echo "commit_msg must be defined"
     return -1
