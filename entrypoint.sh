@@ -62,7 +62,7 @@ else
 fi
 
 echo "Copying files"
-rsync -a --delete "$HOME_DIR/$INPUT_SOURCE_FOLDER/" "$CLONE_DIR/$INPUT_DESTINATION_FOLDER/"
+rsync -a "$HOME_DIR/$INPUT_SOURCE_FOLDER/" "$CLONE_DIR/$INPUT_DESTINATION_FOLDER/"
 git add .
 
 if git status | grep -q "Changes to be committed"
