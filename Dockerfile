@@ -4,6 +4,7 @@ RUN apk update && \
     apk upgrade && \
     apk add git && \
     apk add go && \
+    apk add jq && \
     apk add make && \
     apk add make && \
     apk add rsync && \
