@@ -45,6 +45,9 @@ git config --global user.name "$INPUT_USER_NAME"
 echo "Cloning destination git repository"
 git clone "https://$API_TOKEN_GITHUB@github.com/$INPUT_DESTINATION_REPO.git" "$CLONE_DIR"
 
+echo "Mark clone dir as safe"
+git config --global --add safe.directory "$CLONE_DIR"
+
 echo "Creating folder"
 mkdir -p $CLONE_DIR/$INPUT_DESTINATION_FOLDER/
 cd "$CLONE_DIR"
