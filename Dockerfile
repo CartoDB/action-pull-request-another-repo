@@ -6,6 +6,8 @@ RUN apk update && \
     apk add go && \
     apk add jq && \
     apk add make && \
+    apk add gcc && \
+    apk add musl-dev && \
     apk add rsync && \
     apk add jq && \
     git clone https://github.com/cli/cli.git gh-cli && \
