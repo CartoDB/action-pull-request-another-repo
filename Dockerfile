@@ -7,6 +7,7 @@ RUN apk update && \
     apk add jq && \
     apk add make && \
     apk add rsync && \
+    apk add jq && \
     git clone https://github.com/cli/cli.git gh-cli && \
     cd gh-cli && \
     make && \
